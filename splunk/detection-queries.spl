@@ -1,0 +1,12 @@
+# SQL Injection Detection SPL Queries
+
+# Primary detection query
+index=* sourcetype=flask ("--" OR "' OR" OR "1=1")
+
+# Log-source enumeration query
+source="flask.log" ("--" OR "' OR" OR "1=1")
+
+# Notes:
+# - Adjust index and sourcetype to match your Splunk configuration.
+# - These queries are based on the lab patterns documented in the project.
+# - Do not treat simple string matching as a complete production SQLi detection strategy.

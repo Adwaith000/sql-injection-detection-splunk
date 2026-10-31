@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 320px;
+}
+input, button {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 8px 0;
+    padding: 10px;
+}
